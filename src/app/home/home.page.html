@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Medical Register
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-list class="custom">
+     
+      <ion-item>
+        <ion-label>Name: </ion-label>
+        <ion-input type = "text" placeholder="  " ></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label>Age: </ion-label>
+        <ion-input type="number" placeholder="   00" ></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-item>
+  <ion-item>
+    <ion-label>Blood: </ion-label>
+    <ion-input><ion-select placeholder="Select">
+      <ion-select-option value="blood">A+</ion-select-option>
+      <ion-select-option value="blood">A-</ion-select-option>
+      <ion-select-option value="blood">B+</ion-select-option>
+      <ion-select-option value="blood">B-</ion-select-option>
+      <ion-select-option value="blood">AB+</ion-select-option>
+      <ion-select-option value="blood">AB-</ion-select-option>
+      <ion-select-option value="blood">O+</ion-select-option>
+      <ion-select-option value="blood">O+</ion-select-option>
+    </ion-select></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Alergies: </ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    
+    <ion-label>Medical Notes: </ion-label>
+    <ion-input type="text" placeholder="  " ></ion-input>
+  </ion-item>
+  <ion-button>Editar</ion-button>
+<ion-button (click)="guardar(entradaActual)">Guardar</ion-button>
+
+
+    
+<ion-item>
+    <h2 >
+    Llamar a emergencias sin motivos de causas reales pueden considerarse un delito, por favor asegurase que sea totalmente necesario solicitar el servicio
+  </h2>
+</ion-item>
+<ion-button expand="block" size="large" color="danger"><ion-icon  name="call-outline" title="Call"></ion-icon>Call</ion-button>
+</ion-content>
